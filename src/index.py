@@ -53,6 +53,8 @@ def main():
     saatiin = mehua.ota_varastosta(-32.9)
     print(f"saatiin {saatiin}")
     print(f"Mehuvarasto: {mehua}")
+    
+    print("---LOPPU---")
 
 
 if __name__ == "__main__":
