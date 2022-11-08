@@ -1,7 +1,11 @@
 class Varasto:
-    def __init__(self, tilavuus, alku_saldo=0):
+    def __init__(self, tilavuus, alku_saldo=0, a=1, b=2, c=3):
+        # erittäin pitkä rivi kommentointia joka rikkoo max-line-length=80 -sääntöä pylance konfiguraatiossa
         if tilavuus > 0.0:
             self.tilavuus = tilavuus
+            if a == 1:
+                if b < 1:
+                    self.tilavuus = 0
         else:
             # virheellinen, nollataan
             self.tilavuus = 0.0
@@ -15,6 +19,19 @@ class Varasto:
         else:
             # täyteen ja ylimäärä hukkaan!
             self.saldo = tilavuus
+
+        a = 3
+        a = 2
+        a = 1
+        a = 3
+        a = 2
+        a = 1
+        a = 3
+        a = 2
+        a = 1
+        a = 3
+        a = 2
+        a = 1
 
     # huom: ominaisuus voidaan myös laskea. Ei tarvita erillistä kenttää viela_tilaa tms.
     def paljonko_mahtuu(self):
